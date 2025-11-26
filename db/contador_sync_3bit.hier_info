@@ -1,0 +1,60 @@
+|contador_sync_3bit
+clk => FF_JK:FF0.clk
+clk => FF_JK:FF1.clk
+clk => FF_JK:FF2.clk
+reset => FF_JK:FF0.reset
+reset => FF_JK:FF1.reset
+reset => FF_JK:FF2.reset
+enable => FF_JK:FF0.enable
+enable => FF_JK:FF1.enable
+enable => FF_JK:FF2.enable
+Q[0] <= FF_JK:FF0.Q
+Q[1] <= FF_JK:FF1.Q
+Q[2] <= FF_JK:FF2.Q
+
+
+|contador_sync_3bit|FF_JK:FF0
+clk => Q_int.CLK
+reset => Q_int.ACLR
+enable => Q_int.ENA
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+Q <= Q_int.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contador_sync_3bit|FF_JK:FF1
+clk => Q_int.CLK
+reset => Q_int.ACLR
+enable => Q_int.ENA
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+Q <= Q_int.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contador_sync_3bit|FF_JK:FF2
+clk => Q_int.CLK
+reset => Q_int.ACLR
+enable => Q_int.ENA
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+Q <= Q_int.DB_MAX_OUTPUT_PORT_TYPE
+
+
