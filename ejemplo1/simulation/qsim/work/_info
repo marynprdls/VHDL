@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Barcala\Documents\ejemplo1\simulation\qsim
+vejemplo1
+Z1 Ig8n0XE@dX9L[DzcQUP[UH2
+Z2 Vgza1a9YZZEd=[?]J2od_f2
+Z3 dC:\Users\Barcala\Documents\ejemplo1\simulation\qsim
+Z4 w1757082888
+Z5 8ejemplo1.vo
+Z6 Fejemplo1.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 XC6SgBgO3KXU<4GI4mZD83
+!s85 0
+Z10 !s108 1757082891.354000
+Z11 !s107 ejemplo1.vo|
+Z12 !s90 -work|work|ejemplo1.vo|
+!s101 -O0
+vejemplo1_vlg_check_tst
+!i10b 1
+!s100 i;b1_]dT_IOKkXJ1c@72E1
+IeV_zT_JLf5:QB8`g8oFW`0
+VzMb7X3FCFjRJ9V2BZ5En81
+R3
+Z13 w1757082887
+Z14 8Waveform.vwf.vt
+Z15 FWaveform.vwf.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z16 !s108 1757082891.524000
+Z17 !s107 Waveform.vwf.vt|
+Z18 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R8
+vejemplo1_vlg_sample_tst
+!i10b 1
+!s100 N^4Q]7D`Tz[g2XLHhoXa=1
+IH=_9Ik<Tg3No9[kEj82Th0
+VdG=cd:8OXB@4GWP`h=8bn0
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vejemplo1_vlg_vec_tst
+!i10b 1
+!s100 _0OhfzP?<gfNF4KWY27lS1
+I71b;DXF<_@GCmc89h:FBI3
+VdYYRIJY80MS8WnXf5`Dl^0
+R3
+R13
+R14
+R15
+L0 154
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
