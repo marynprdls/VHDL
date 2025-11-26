@@ -1,0 +1,10 @@
+|contador_async_3bit
+clk => Q_int[0].CLK
+reset => Q_int[2].ACLR
+reset => Q_int[1].ACLR
+reset => Q_int[0].ACLR
+Q[0] << Q_int[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] << Q_int[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] << Q_int[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
