@@ -1,0 +1,51 @@
+
+-- A library clause declares a name as a library.  It 
+-- does not create the library; it simply forward declares 
+-- it. 
+library ieee;
+use ieee.std_logic_1164.all
+
+
+entity fft_n is
+	
+
+	port
+	(
+		-- Input ports
+		t	: in  std_logic;
+		clk	: in  std_logic;
+		rst	: in  std_logic; -- clear activo en bajo
+
+		-- Output ports
+		q	: out std_logic
+	);
+end entity;
+
+-- Library Clause(s) (optional)
+-- Use Clause(s) (optional)
+
+architecture arch1 of fft_n is
+--declaro la señal para operar con una salida
+	signal qaux : std_logic;
+
+begin
+
+	p0:
+	process(rst,clk) is
+		begin
+			if (rst='0')then
+				qaux <= '0';
+			elsif (falling_edge(clk))then
+				--señal intermedia para adjudicarsela a la salida.
+					if(t='1') then
+					--q<= not q
+						qaux <= not qaux;
+					else
+						qaux <= qaux;
+					end if;
+			end if;
+	end process
+
+	q <= qaux;
+
+end architecture;

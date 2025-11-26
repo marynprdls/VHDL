@@ -1,0 +1,49 @@
+library ieee;
+use ieee.std_logic_1164.all
+
+
+entity contador3 is
+	
+
+	port
+	(
+		-- Input ports
+		clk	: in  std_logic;
+		rst	: in  std_logic; 
+
+		-- Output ports
+		cuenta	: out std_logic_vector (2 downto 0)
+	);
+end entity;
+
+ 
+
+architecture arch1 of contador3 is
+
+
+component fft_n
+
+	port
+	(
+		-- Input ports
+		t	: in  std_logic;
+		clk	: in std_logic;
+		rst	: in std_logic;
+		q	: out std_logic
+		
+	);
+
+end component;
+
+signal q0,q1,q2:std_logic;
+signal t2 : std_logic;
+begin
+
+	fft0:fft_n port map ('1',clk,rst,q0);
+	fft1:fft_n port map (q0,clk,rst,q1);
+	fft2:fft_n port map (t2,'1',clk,rst,q2);
+	
+	t2 <= q1 and q0;
+	cuenta <= q2&q1&q0;
+	--cuenta (0)>=q0 forma alternativa
+end architecture;
