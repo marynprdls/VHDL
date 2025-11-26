@@ -1,0 +1,10 @@
+|contador_async_mod5_dir
+clk => Q_int[0].CLK
+reset => process_2.IN1
+up_down => Q_int.OUTPUTSELECT
+up_down => Q_int.OUTPUTSELECT
+Q[0] << Q_int[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] << Q_int[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] << Q_int[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
